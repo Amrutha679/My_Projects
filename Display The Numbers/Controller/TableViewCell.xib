@@ -15,27 +15,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="580" height="118"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drp-rP-meT">
-                        <rect key="frame" x="100" y="10" width="380" height="98"/>
-                        <state key="normal">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </state>
-                        <connections>
-                            <action selector="onClickSelectionButton:" destination="tWk-uM-W5s" eventType="touchUpInside" id="lGm-D4-day"/>
-                        </connections>
-                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-IC-4g5">
+                        <rect key="frame" x="0.0" y="0.0" width="580" height="118"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Drp-rP-meT" secondAttribute="trailing" constant="100" id="5Su-BY-UYK"/>
-                    <constraint firstItem="Drp-rP-meT" firstAttribute="top" secondItem="YaP-T6-ezm" secondAttribute="top" constant="10" id="Phu-66-CF8"/>
-                    <constraint firstAttribute="bottom" secondItem="Drp-rP-meT" secondAttribute="bottom" constant="10" id="Xyz-Gh-Q1s"/>
-                    <constraint firstItem="Drp-rP-meT" firstAttribute="leading" secondItem="YaP-T6-ezm" secondAttribute="leading" constant="100" id="qCZ-Bj-Kpu"/>
+                    <constraint firstItem="iUK-IC-4g5" firstAttribute="top" secondItem="YaP-T6-ezm" secondAttribute="top" id="Neh-Qz-FlP"/>
+                    <constraint firstAttribute="bottom" secondItem="iUK-IC-4g5" secondAttribute="bottom" id="QZk-0d-PaY"/>
+                    <constraint firstAttribute="trailing" secondItem="iUK-IC-4g5" secondAttribute="trailing" id="lz0-YQ-YBt"/>
+                    <constraint firstItem="iUK-IC-4g5" firstAttribute="leading" secondItem="YaP-T6-ezm" secondAttribute="leading" id="zrO-KO-KEp"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="selectionButton" destination="Drp-rP-meT" id="3nk-Rj-KZc"/>
+                <outlet property="numLabel" destination="iUK-IC-4g5" id="gVe-Qf-cpg"/>
             </connections>
-            <point key="canvasLocation" x="-1270" y="28"/>
+            <point key="canvasLocation" x="-562.31884057971024" y="22.767857142857142"/>
         </tableViewCell>
     </objects>
 </document>

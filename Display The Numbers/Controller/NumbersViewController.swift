@@ -12,15 +12,15 @@ import UIKit
 
 class NumbersViewController: UIViewController  {
     
-    //let C = Constants()
+    let C = Constants()
+    var num : Int!
+    var number : String!
     
     @IBOutlet weak var numberLable: UILabel!
     
-    var index: Int!
-    
-    
     override func viewDidLoad() {
-        numberLable.text = "Number is \(index)"
         
+        numberLable.text = "\(num ?? 0)"
     }
+    
 }
